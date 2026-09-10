@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Kiểm tra quyền truy cập</title>
+</head>
+
+<body>
+    <h1>Kiểm tra quyền truy cập</h1>
+    <label for="userRole">Vai trò:</label>
+    <select id="userRole" name="userRole">
+        <option value="ADMIN">ADMIN</option>
+        <option value="MANAGER">MANAGER</option>
+        <option value="EMPLOYEE">EMPLOYEE</option>
+        <option value="GUEST">GUEST</option>
+    </select>
+
+    <label><input type="checkbox" id="isAccountActive" name="isAccountActive"> Kích hoạt tài khoản</label>
+    <button onclick="checkAccess()">Kiểm tra quyền truy cập</button>
+
+    <p id="result" style="display: none;"></p>
+    <script src="admin.js"></script>
+</body>
+
+</html>
