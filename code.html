@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Tính chiết khấu đơn hàng</title>
+</head>
+
+<body>
+    <h1>Tính chiết khấu đơn hàng</h1>
+    Nhập giá trị đơn hàng: <input type="number" id="orderValue" name="orderValue">
+    <label><input type="checkbox" id="vip" name="vip"> VIP</label>
+    <button onclick="calculateDiscount()">Tính chiết khấu</button>
+
+    <p id="result" style="display: none;">
+        Giá tiền cần thanh toán: <span id="finalPrice" style="font-weight: bold; color: red;"></span> VNĐ
+    </p>
+
+    <script src="tinhtien.js"></script>
+</body>
+
+</html>
